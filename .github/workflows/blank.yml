@@ -35,7 +35,7 @@ jobs:
         echo test, and deploy your project.
   my_second_job:
     runs-on: ubuntu-latest
-    needs: [job01]
+    needs: [my_first_job]
     steps:
     - name: Run a command
       run: |
