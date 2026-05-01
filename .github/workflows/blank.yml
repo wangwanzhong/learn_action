@@ -24,14 +24,14 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo Hello, world! >> readme.md
+      run: echo Hello, world!
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
       env:
         APP_NAME: Mona
       run: |
-        echo Add other actions to build $APP_NAME, >> readme.md
+        echo Add other actions to build $APP_NAME,
         echo test, and deploy your project.
   my_second_job:
     runs-on: ubuntu-latest
